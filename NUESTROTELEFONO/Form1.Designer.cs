@@ -40,6 +40,9 @@
             // 
             // cmbPuertos
             // 
+            this.cmbPuertos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.cmbPuertos.FormattingEnabled = true;
             this.cmbPuertos.Location = new System.Drawing.Point(117, 48);
             this.cmbPuertos.Name = "cmbPuertos";
@@ -48,6 +51,9 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(31, 56);
             this.label1.Name = "label1";
@@ -57,6 +63,9 @@
             // 
             // lblTelefono
             // 
+            this.lblTelefono.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTelefono.AutoSize = true;
             this.lblTelefono.Location = new System.Drawing.Point(31, 97);
             this.lblTelefono.Name = "lblTelefono";
@@ -66,6 +75,9 @@
             // 
             // lblMensaje
             // 
+            this.lblMensaje.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lblMensaje.AutoSize = true;
             this.lblMensaje.Location = new System.Drawing.Point(31, 133);
             this.lblMensaje.Name = "lblMensaje";
@@ -75,6 +87,9 @@
             // 
             // txtTelefono
             // 
+            this.txtTelefono.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTelefono.Location = new System.Drawing.Point(117, 94);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(135, 20);
@@ -82,13 +97,17 @@
             // 
             // txtMensaje
             // 
-            this.txtMensaje.Location = new System.Drawing.Point(117, 136);
+            this.txtMensaje.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtMensaje.Location = new System.Drawing.Point(117, 133);
             this.txtMensaje.Name = "txtMensaje";
-            this.txtMensaje.Size = new System.Drawing.Size(144, 20);
+            this.txtMensaje.Size = new System.Drawing.Size(136, 20);
             this.txtMensaje.TabIndex = 5;
             // 
             // btnEnviar
             // 
+            this.btnEnviar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnEnviar.Location = new System.Drawing.Point(80, 193);
             this.btnEnviar.Name = "btnEnviar";
             this.btnEnviar.Size = new System.Drawing.Size(106, 24);
@@ -101,6 +120,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PowderBlue;
             this.ClientSize = new System.Drawing.Size(284, 262);
             this.Controls.Add(this.btnEnviar);
             this.Controls.Add(this.txtMensaje);
@@ -109,9 +129,11 @@
             this.Controls.Add(this.lblTelefono);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbPuertos);
+            this.ForeColor = System.Drawing.Color.Black;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Mensajería";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Mensajeria";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
