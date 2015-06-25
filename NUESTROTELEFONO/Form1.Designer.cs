@@ -36,6 +36,7 @@
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.txtMensaje = new System.Windows.Forms.TextBox();
             this.btnEnviar = new System.Windows.Forms.Button();
+            this.btnResgistro = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cmbPuertos
@@ -108,7 +109,7 @@
             // btnEnviar
             // 
             this.btnEnviar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnEnviar.Location = new System.Drawing.Point(80, 193);
+            this.btnEnviar.Location = new System.Drawing.Point(34, 193);
             this.btnEnviar.Name = "btnEnviar";
             this.btnEnviar.Size = new System.Drawing.Size(106, 24);
             this.btnEnviar.TabIndex = 6;
@@ -116,12 +117,23 @@
             this.btnEnviar.UseVisualStyleBackColor = true;
             this.btnEnviar.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnResgistro
+            // 
+            this.btnResgistro.Location = new System.Drawing.Point(197, 194);
+            this.btnResgistro.Name = "btnResgistro";
+            this.btnResgistro.Size = new System.Drawing.Size(75, 23);
+            this.btnResgistro.TabIndex = 7;
+            this.btnResgistro.Text = "Registro";
+            this.btnResgistro.UseVisualStyleBackColor = true;
+            this.btnResgistro.Click += new System.EventHandler(this.btnResgistro_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
             this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.btnResgistro);
             this.Controls.Add(this.btnEnviar);
             this.Controls.Add(this.txtMensaje);
             this.Controls.Add(this.txtTelefono);
@@ -149,6 +161,7 @@
         private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.TextBox txtMensaje;
         private System.Windows.Forms.Button btnEnviar;
+        private System.Windows.Forms.Button btnResgistro;
     }
 }
 

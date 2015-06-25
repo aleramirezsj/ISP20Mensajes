@@ -39,5 +39,12 @@ namespace NUESTROTELEFONO
         {
 
         }
+
+        private void btnResgistro_Click(object sender, EventArgs e)
+        {
+            Form2 registro = new Form2();
+            registro.Show();
+        }
+
     }
 }
