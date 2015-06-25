@@ -55,10 +55,16 @@ namespace NUESTROTELEFONO
             conexion.Close();
 
             dgvDatos.DataSource = dataset1.Tables["destinatario"];
+            
             //dgvDatos.Columns["idDestinatario"].HeaderText = "Id destinatario";
            // dgvDatos.Columns["destinatario"].HeaderText = "Destinatario";
 
            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //dataset1.Tables.
         }
 
         

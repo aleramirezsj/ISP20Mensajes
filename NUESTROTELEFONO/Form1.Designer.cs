@@ -37,6 +37,7 @@
             this.txtMensaje = new System.Windows.Forms.TextBox();
             this.btnEnviar = new System.Windows.Forms.Button();
             this.btnResgistro = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cmbPuertos
@@ -129,6 +130,17 @@
             this.btnResgistro.UseVisualStyleBackColor = true;
             this.btnResgistro.Click += new System.EventHandler(this.btnResgistro_Click);
             // 
+            // button1
+            // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.button1.Location = new System.Drawing.Point(340, 291);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(106, 24);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Registro";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_2);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -138,6 +150,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(499, 342);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnEnviar);
             this.Controls.Add(this.txtMensaje);
             this.Controls.Add(this.txtTelefono);
@@ -169,6 +182,7 @@
         private System.Windows.Forms.TextBox txtMensaje;
         private System.Windows.Forms.Button btnEnviar;
         private System.Windows.Forms.Button btnResgistro;
+        private System.Windows.Forms.Button button1;
     }
 }
 
