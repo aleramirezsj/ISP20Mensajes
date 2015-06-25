@@ -46,7 +46,7 @@
             this.cmbPuertos.FormattingEnabled = true;
             this.cmbPuertos.Location = new System.Drawing.Point(117, 48);
             this.cmbPuertos.Name = "cmbPuertos";
-            this.cmbPuertos.Size = new System.Drawing.Size(136, 21);
+            this.cmbPuertos.Size = new System.Drawing.Size(351, 21);
             this.cmbPuertos.TabIndex = 0;
             // 
             // label1
@@ -92,7 +92,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTelefono.Location = new System.Drawing.Point(117, 94);
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(135, 20);
+            this.txtTelefono.Size = new System.Drawing.Size(350, 20);
             this.txtTelefono.TabIndex = 4;
             // 
             // txtMensaje
@@ -101,14 +101,16 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtMensaje.Location = new System.Drawing.Point(117, 133);
+            this.txtMensaje.MaxLength = 250;
+            this.txtMensaje.Multiline = true;
             this.txtMensaje.Name = "txtMensaje";
-            this.txtMensaje.Size = new System.Drawing.Size(136, 20);
+            this.txtMensaje.Size = new System.Drawing.Size(351, 89);
             this.txtMensaje.TabIndex = 5;
             // 
             // btnEnviar
             // 
-            this.btnEnviar.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnEnviar.Location = new System.Drawing.Point(80, 193);
+            this.btnEnviar.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnEnviar.Location = new System.Drawing.Point(194, 291);
             this.btnEnviar.Name = "btnEnviar";
             this.btnEnviar.Size = new System.Drawing.Size(106, 24);
             this.btnEnviar.TabIndex = 6;
@@ -120,8 +122,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.PowderBlue;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(499, 342);
             this.Controls.Add(this.btnEnviar);
             this.Controls.Add(this.txtMensaje);
             this.Controls.Add(this.txtTelefono);
@@ -131,6 +136,9 @@
             this.Controls.Add(this.cmbPuertos);
             this.ForeColor = System.Drawing.Color.Black;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(550, 420);
+            this.MinimumSize = new System.Drawing.Size(515, 380);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mensajeria";
